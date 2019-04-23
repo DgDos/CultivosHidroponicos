@@ -1,0 +1,25 @@
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://s3.amazonaws.com/mumumio-production/medias/42978/original.png?1488289665');
+    background-size: cover;
+  }
+
+  .example-h2 {
+    margin: 10px;
+  }
+  
+  .example-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+    
+  }
+  
+  .example-margin {
+    margin: 0 10px;
+    
+  }

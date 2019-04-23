@@ -1,14 +1,14 @@
-<mat-grid-list cols="4" rowHeight="100px">
-  <mat-grid-tile [colspan]="1" [rowspan]="4" [style.background]="black">
-    
-  </mat-grid-tile>
-  <mat-grid-tile [colspan]="1" [rowspan]="4" [style.background]="blue">
-    
-  </mat-grid-tile>
-</mat-grid-list><div id="mydiv">
-  Nombre:
-  <br>
-  <input #name mdbInput type="text" class="form-control">
-  <br>
-  <button type="button" class="btn btn-success" (click)="createCultivo(name.value)">Create</button>
-</div>
+<mat-list>
+  <mat-list-item>
+      <app-seleccion></app-seleccion>
+      Nombre:
+      <mat-form-field class="example-full-width">
+        <input #name matInput class="form-control">
+      </mat-form-field>
+      <button mat-button color="primary" (click)="createCultivo(name.value)">Create</button>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    HOLAAAAAAA
+  </mat-list-item>
+</mat-list>
