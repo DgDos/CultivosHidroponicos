@@ -1,0 +1,12 @@
+<button (click)="toggle()" id="bt">
+  {{buttonName}}
+</button>
+
+<ng-container *ngIf="show">
+  <div style="margin: 0 auto;text-align: left;">
+      <div>
+          <p>{{info}}</p>
+      </div>
+     
+  </div>
+</ng-container>
