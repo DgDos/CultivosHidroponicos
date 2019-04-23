@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 import {Firebase} from 'src/app/firebase/firebase';
 import {AngularFireModule} from '@angular/fire';
 import { AngularFirestore } from '@angular/fire/firestore';
@@ -18,6 +19,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatInputModule} from '@angular/material/input';
+import {MatRadioModule} from '@angular/material/radio';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 
@@ -37,6 +39,7 @@ import {MatListModule} from '@angular/material/list';
     MatCheckboxModule,
     MatGridListModule,
     MatInputModule,
+    MatRadioModule,
     MatDividerModule,
     MatListModule
   ],
