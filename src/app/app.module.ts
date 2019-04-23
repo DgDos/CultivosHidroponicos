@@ -8,26 +8,30 @@ import { AngularFirestore } from '@angular/fire/firestore';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-<<<<<<< HEAD
 import { SeleccionComponent } from './seleccion/seleccion.component';
-=======
 import { SensoresComponent } from './sensores/sensores.component';
 
->>>>>>> 26f6782c6517de0495a7d3676445ec0652e23863
+
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-<<<<<<< HEAD
-    SeleccionComponent
-=======
+    SeleccionComponent,
     SensoresComponent
->>>>>>> 26f6782c6517de0495a7d3676445ec0652e23863
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(Firebase.firebase)
+    AngularFireModule.initializeApp(Firebase.firebase),
+    MatCardModule,
+    MatButtonModule,
+    MatCheckboxModule
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]
