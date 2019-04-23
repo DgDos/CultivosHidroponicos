@@ -1,0 +1,14 @@
+<mat-grid-list cols="4" rowHeight="100px">
+  <mat-grid-tile [colspan]="1" [rowspan]="4" [style.background]="black">
+    
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="4" [style.background]="blue">
+    
+  </mat-grid-tile>
+</mat-grid-list><div id="mydiv">
+  Nombre:
+  <br>
+  <input #name mdbInput type="text" class="form-control">
+  <br>
+  <button type="button" class="btn btn-success" (click)="createCultivo(name.value)">Create</button>
+</div>

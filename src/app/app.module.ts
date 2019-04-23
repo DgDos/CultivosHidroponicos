@@ -9,12 +9,14 @@ import { AngularFirestore } from '@angular/fire/firestore';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SensoresComponent } from './sensores/sensores.component';
+import { FormCreateComponent } from './form-create/form-create.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SensoresComponent
+    SensoresComponent,
+    FormCreateComponent
   ],
   imports: [
     BrowserModule,
