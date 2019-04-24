@@ -1,0 +1,51 @@
+.example-card {
+    max-width: 400px;
+
+  }
+  
+  .example-header-image {
+    background-image: url('https://s3.amazonaws.com/mumumio-production/medias/42978/original.png?1488289665');
+    background-size: cover;
+  }
+
+  .example-header-image2 {
+    background-image: url('http://benicio.cl/1442-large_default/albahaca.jpg');
+    background-size: cover;
+  }
+
+  .example-header-image3 {
+    background-image: url('https://www.cocinista.es/download/bancorecursos/ingredientes/perejil.jpg');
+    background-size: cover;
+  }
+
+  .example-header-image4 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4RAMhh6jslWDQljfyHLjLnMOxUVVLUcg32cc6NFub_BtgGmTTdA');
+    background-size: cover;
+  }
+
+  .example-h2 {
+    margin: 10px;
+  }
+  
+  .example-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+    
+  }
+  
+  .example-margin {
+    margin: 0 10px;
+    
+  }
+
+  .example-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+  }
+  
+  .example-radio-button {
+    margin: 5px;
+  }
