@@ -1,8 +1,23 @@
-Nombre:
-<mat-form-field class="example-full-width">
-  <input #name matInput class="form-control">
-</mat-form-field>
-<button mat-button color="primary" (click)="createCultivo(name.value)">Create</button>
 <app-seleccion></app-seleccion>
+Cultivo a escoger:
+<mat-form-field class="example-full-width">
+  <select matNativeControl required #seleccion>
+    <option value="Perejil">Perejil</option>
+    <option value="Albahaca">Albahaca</option>
+    <option value="Cilantro">Cilantro</option>
+    <option value="Manzanilla">Manzanilla</option>
+  </select>
+</mat-form-field>
+<br>
+Nombre:
+<mat-form-field>
+<input #name matInput class="form-control">
+</mat-form-field>
+<br>
+<button mat-button color="primary" (click)="createCultivo(name.value,seleccion.value)">Create</button>
 <mat-divider></mat-divider>
-Hola
+<ul class="list-group">
+  <li class="text" *ngFor="let item of items " class="list-group-item">
+    {{item.name}} {{item.tipo}} {{item.temp_min}} {{item.temp_max}} {{item.hum_max}} {{item.hum_min}}
+  </li>
+</ul>
