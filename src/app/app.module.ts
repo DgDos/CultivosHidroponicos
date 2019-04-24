@@ -22,6 +22,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
+import {MatTabsModule} from '@angular/material/tabs';
+
 
 @NgModule({
   declarations: [
@@ -41,7 +43,8 @@ import {MatListModule} from '@angular/material/list';
     MatInputModule,
     MatRadioModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatTabsModule
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]

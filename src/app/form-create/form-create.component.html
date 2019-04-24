@@ -1,8 +1,7 @@
-Nombre:
+
 <mat-form-field class="example-full-width">
-  <input #name matInput class="form-control">
+  <input #name matInput placeholder="Nombre del cultivo" class="">
 </mat-form-field>
-<button mat-button color="primary" (click)="createCultivo(name.value)">Create</button>
+<button mat-raised-button color="warn" (click)="createCultivo(name.value)">Crear cultivo</button>
 <app-seleccion></app-seleccion>
-<mat-divider></mat-divider>
 Hola
