@@ -9,6 +9,9 @@ import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CuidadoInfoComponent } from './cuidado-info/cuidado-info.component';
+
+
 import { SeleccionComponent } from './seleccion/seleccion.component';
 import { SensoresComponent } from './sensores/sensores.component';
 import { FormCreateComponent } from './form-create/form-create.component';
@@ -24,9 +27,11 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import {MatSelectModule} from '@angular/material/select';
 
+
 @NgModule({
   declarations: [
     AppComponent,
+    CuidadoInfoComponent,
     SensoresComponent,
     FormCreateComponent,
     SeleccionComponent
