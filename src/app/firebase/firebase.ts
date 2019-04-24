@@ -8,4 +8,4 @@ export const Firebase = {
         storageBucket: "cultivoshidroponicos-8e6a3.appspot.com",
         messagingSenderId: "801506431978"
     }
-};
+}
