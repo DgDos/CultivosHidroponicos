@@ -57,8 +57,12 @@ export class FormCreateComponent{
     return this.db.collection('Cultivos').doc(id).delete();
   }
 
-  updateUser(id: string) {
+  updateCultivo(id: string,temp_max:string,temp_min:string,hum_max:string,hum_min:string) {
     this.db.collection('Cultivos').doc(id).update({
+      temp_max: temp_max,
+      temp_min:temp_min,
+      hum_max:hum_max,
+      hum_min:hum_min
     });
   }
 

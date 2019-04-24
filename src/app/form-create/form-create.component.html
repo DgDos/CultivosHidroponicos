@@ -1,5 +1,5 @@
 <mat-form-field class="example-full-width">
-    <mat-label>Tipo de Cultivo</mat-label>
+  <mat-label>Tipo de Cultivo</mat-label>
   <select matNativeControl required #seleccion>
     <option value="Cilantro">Cilantro</option>
     <option value="Albahaca">Albahaca</option>
@@ -14,8 +14,34 @@
 <br>
 <button mat-raised-button color="warn" (click)="createCultivo(name.value,seleccion.value)">Crear cultivo</button>
 <app-seleccion></app-seleccion>
-<ul class="list-group" hidden>
+<ul class="list-group">
   <li class="text" *ngFor="let item of items " class="list-group-item">
     {{item.name}} {{item.tipo}} {{item.temp_min}} {{item.temp_max}} {{item.hum_max}} {{item.hum_min}}
   </li>
 </ul>
+<mat-form-field class="example-full-width">
+  <mat-label>Cultivos</mat-label>
+  <select matNativeControl required #actualizar>
+    <option *ngFor="let item of items " value={{item.id}}>{{item.name}}</option>
+  </select>
+</mat-form-field>
+<br>
+<mat-form-field class="example-full-width">
+  <input #temp_max matInput placeholder="Temperatura maxima"> 
+</mat-form-field>
+<br>
+<mat-form-field class="example-full-width">
+  <input #temp_min matInput placeholder="Temperatura minima">
+</mat-form-field>
+<br>
+<mat-form-field class="example-full-width">
+  <input #hum_max matInput placeholder="Humedad maxima">
+</mat-form-field>
+<br>
+<mat-form-field class="example-full-width">
+  <input #hum_min matInput placeholder="Humedad minima" class="">
+</mat-form-field>
+<br>
+<button mat-raised-button color="warn"
+  (click)="updateCultivo(actualizar.value,temp_max.value,temp_min.value,hum_max.value,hum_min.value)">Actualizar
+  cultivo</button>
