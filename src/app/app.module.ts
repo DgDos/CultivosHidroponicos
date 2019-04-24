@@ -2,10 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 
-import {Firebase} from 'src/app/firebase/firebase';
+import {Firebase} from './firebase/firebase';
 import {AngularFireModule} from '@angular/fire';
 import { AngularFirestore } from '@angular/fire/firestore';
-
+import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +22,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,9 @@ import {MatListModule} from '@angular/material/list';
     MatInputModule,
     MatRadioModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    FormsModule,
+    MatSelectModule
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]
